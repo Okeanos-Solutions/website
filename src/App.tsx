@@ -1,8 +1,4 @@
-import { useState } from "react";
-import { Dialog } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-
-const navigation = [
+const navigation: { name: string; href: string }[] = [
   // { name: "Product", href: "#" },
   // { name: "Features", href: "#" },
   // { name: "Marketplace", href: "#" },
@@ -10,8 +6,6 @@ const navigation = [
 ];
 
 export default function App() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
     <div className="bg-white">
       <header className="absolute inset-x-0 top-0 z-50">
